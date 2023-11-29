@@ -1,0 +1,4 @@
+baseURL = 'https://example.org/'
+languageCode = 'de-de'
+title = 'Allgemeine Programmiersprache'
+theme =["github.com/thorstenkloehn/ahrensburg-themen"]
