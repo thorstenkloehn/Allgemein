@@ -6,7 +6,7 @@ type: "page"
 menu: 
   main:
     name: "Scripting Engine"
-    weight: 101
+    weight: 300
     
 ---
 # Scripting Engine
@@ -179,6 +179,78 @@ func main() {
     ctx.RunScript("print('Hello World!')", "main.js")
 }
 ```
+## Lua
+Lua ist eine imperative und prozedurale Programmiersprache. 
+### Einsatzgebiete
+- Spieleentwicklung
+- Eingebettete Systeme
+- Webentwicklung
+- Erweiterung und Skripting von Anwendungen
+
+### Lua Tutorials
+- [Lua Tutorial](https://www.tutorialspoint.com/lua/index.htm)
+- [Lua Tutorial](https://www.lua.org/pil/contents.html)
+- [Lua Tutorial](https://www.lua.org/manual/5.3/)
+- [Lua Tutorial](https://www.lua.org/pil/contents.html)
+
+###  Wikibooks Lua
+- [Lua Wikibooks](https://en.wikibooks.org/wiki/Lua_Programming)
+
+### Lua Bücher
+- [Lua Bücher](https://www.lua.org/docs.html)
+### Cheat Sheet 
+- [Lua Cheat Sheet](https://devhints.io/lua)
+
+## Python
+Python ist eine universelle, üblicherweise interpretierte höhere Programmiersprache. 
+### Einsatzgebiete
+- Webentwicklung
+- Datenanalyse
+- Machine Learning
+- Automatisierung
+- Cybersicherheit
+- Bildverarbeitung
+
+### Python Tutorials
+- [Python Tutorial](https://www.tutorialspoint.com/python/index.htm)
+- [Python Tutorial](https://www.learnpython.org/)
+- [Python Tutorial](https://www.w3schools.com/python/)
+- [Python Tutorial](https://www.python.org/about/gettingstarted/)
+- [Python Tutorial](https://www.python.org/doc/)
+
+### Python Wikibooks
+- [Python Wikibooks](https://en.wikibooks.org/wiki/Python_Programming)
+
+### Python Bücher
+- [Python Bücher](https://wiki.python.org/moin/PythonBooks)
+
+### Cheat Sheet
+- [Python Cheat Sheet](https://devhints.io/python)
+
+## JavaScript
+JavaScript ist eine Skriptsprache, die ursprünglich für Webseiten entwickelt wurde.
+### Einsatzgebiete
+- Frontend-Entwicklung
+- Backend-Entwicklung
+- Echtzeit-Webanwendungen
+- Datenvisualisierung
+- Web-Scraping
+
+### JavaScript Tutorials
+- [JavaScript Tutorial](https://www.tutorialspoint.com/javascript/index.htm)
+- [JavaScript Tutorial](https://www.learn-js.org/)
+- [JavaScript Tutorial](https://www.w3schools.com/js/)
+- [JavaScript Tutorial](https://developer.mozilla.org/de/docs/Web/JavaScript)
+
+### JavaScript Wikibooks
+- [JavaScript Wikibooks](https://en.wikibooks.org/wiki/JavaScript)
+
+### JavaScript Bücher
+- [JavaScript Bücher](https://developer.mozilla.org/de/docs/Web/JavaScript)
+
+### Cheat Sheet
+- [JavaScript Cheat Sheet](https://devhints.io/jsdoc)
+
 
 
 

@@ -6,11 +6,10 @@ type: "page"
 menu: 
   main:
     name: "Python 1"
-    weight: 13
+    weight: 301
     
 ---
 
-Erstelle ein Anki Karteikartenset mit den folgenden Begriffen und Definitionen.
 # Python Grundkurs 1
 * Variablen
 * Datentypen

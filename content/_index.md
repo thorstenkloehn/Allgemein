@@ -124,8 +124,8 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 #### Go Installieren
 ```bash
-wget https://golang.org/dl/go1.21.4.linux-amd64.tar.gz
-sudo tar -C /usr/local -xzf go1.21.4.linux-amd64.tar.gz
+wget https://golang.org/dl/go1.21.5.linux-amd64.tar.gz
+sudo tar -C /usr/local -xzf go1.21.5.linux-amd64.tar.gz
 
 sudo nano ~/.bashrc
 ```
@@ -249,13 +249,8 @@ nginx -v # Version anzeigen
 ### Website Installieren
 ```bash
 git clone https://github.com/thorstenkloehn/ahrensburg.city.git
-git clone https://github.com/thorstenkloehn/Installieren.git
-git clone https://github.com/thorstenkloehn/doc.git
-git clone https://github.com/thorstenkloehn/Cplus.git
-git clone https://github.com/thorstenkloehn/Rust.git
-git clone https://github.com/thorstenkloehn/C.git
-git clone https://github.com/thorstenkloehn/PostgreSql.git
-git clone https://github.com/thorstenkloehn/Python.git
+git clone https://github.com/thorstenkloehn/Allgemein.git
+
 ```
 #### cerbort Installation
 ```bash
@@ -269,12 +264,7 @@ sudo rm /etc/nginx/sites-enabled/default
 sudo systemctl stop nginx
 sudo certbot certonly --standalone -d ahrensburg.city -d www.ahrensburg.city
 sudo certbot certonly --standalone -d ahrensburg-dev.de -d www.ahrensburg-dev.de
-sudo certbot certonly --standalone -d doc.ahrensburg-dev.de 
-sudo certbot certonly --standalone -d cplus.ahrensburg-dev.de
-sudo certbot certonly --standalone -d rust.ahrensburg-dev.de
-sudo certbot certonly --standalone -d c.ahrensburg-dev.de
-sudo certbot certonly --standalone -d postgresql.ahrensburg-dev.de
-sudo certbot certonly --standalone -d python.ahrensburg-dev.de
+
 ```
 
 #### Nginx Konfiguration
@@ -313,87 +303,13 @@ server {
     server_name ahrensburg-dev.de;
     ssl_certificate /etc/letsencrypt/live/ahrensburg-dev.de/fullchain.pem;
     ssl_certificate_key /etc/letsencrypt/live/ahrensburg-dev.de/privkey.pem;
-    root /home/thorsten/Installieren/public;
+    root /home/thorsten/Allgemein/public;
 
     location / {
         try_files $uri $uri/ =404;
     }
 }
 
-server {
-    listen 443 ssl http2;
-    listen [::]:443 ssl http2;
-    server_name doc.ahrensburg-dev.de;
-    ssl_certificate /etc/letsencrypt/live/doc.ahrensburg-dev.de/fullchain.pem;
-    ssl_certificate_key /etc/letsencrypt/live/doc.ahrensburg-dev.de/privkey.pem;
-    root /home/thorsten/doc/public;
-
-    location / {
-        try_files $uri $uri/ =404;
-    }
-}
-
-server {
-    listen 443 ssl http2;
-    listen [::]:443 ssl http2;
-    server_name cplus.ahrensburg-dev.de;
-    ssl_certificate /etc/letsencrypt/live/cplus.ahrensburg-dev.de/fullchain.pem;
-    ssl_certificate_key /etc/letsencrypt/live/cplus.ahrensburg-dev.de/privkey.pem;
-    root /home/thorsten/Cplus/public;
-
-    location / {
-        try_files $uri $uri/ =404;
-    }
-}
-
-server {
-    listen 443 ssl http2;
-    listen [::]:443 ssl http2;
-    server_name rust.ahrensburg-dev.de;
-    ssl_certificate /etc/letsencrypt/live/rust.ahrensburg-dev.de/fullchain.pem;
-    ssl_certificate_key /etc/letsencrypt/live/rust.ahrensburg-dev.de/privkey.pem;
-    root /home/thorsten/Rust/public;
-
-    location / {
-        try_files $uri $uri/ =404;
-    }
-}
-server {
-    listen 443 ssl http2;
-    listen [::]:443 ssl http2;
-    server_name c.ahrensburg-dev.de;
-    ssl_certificate /etc/letsencrypt/live/c.ahrensburg-dev.de/fullchain.pem;
-    ssl_certificate_key /etc/letsencrypt/live/c.ahrensburg-dev.de/privkey.pem;
-    root /home/thorsten/C/public;
-
-    location / {
-        try_files $uri $uri/ =404;
-    }
-}
-server {
-    listen 443 ssl http2;
-    listen [::]:443 ssl http2;
-    server_name postgresql.ahrensburg-dev.de;
-    ssl_certificate /etc/letsencrypt/live/postgresql.ahrensburg-dev.de/fullchain.pem;
-    ssl_certificate_key /etc/letsencrypt/live/postgresql.ahrensburg-dev.de/privkey.pem;
-    root /home/thorsten/PostgreSql/public;
-
-    location / {
-        try_files $uri $uri/ =404;
-    }
-}
-server {
-    listen 443 ssl http2;
-    listen [::]:443 ssl http2;
-    server_name python.ahrensburg-dev.de;
-    ssl_certificate /etc/letsencrypt/live/python.ahrensburg-dev.de/fullchain.pem;
-    ssl_certificate_key /etc/letsencrypt/live/python.ahrensburg-dev.de/privkey.pem;
-    root /home/thorsten/Python/public;
-
-    location / {
-        try_files $uri $uri/ =404;
-    }
-}
 ```
 ## Anki
 Anki ist ein Programm zum Lernen von Vokabeln und anderen Inhalten. Es ist für Windows, Linux und Mac OS X verfügbar. Anki ist Open Source und kostenlos. Es ist auch für Android und iOS verfügbar, aber diese Versionen sind nicht kostenlos.
