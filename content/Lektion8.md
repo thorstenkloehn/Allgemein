@@ -1,16 +1,16 @@
 ---
-title: "Lektion 9"
+title: "Lektion 8"
 date: 2023-11-27T07:51:51+01:00
 draft: false
 type: "page"
 menu: 
   main:
-    name: "Lektion 9"
-    weight: 10
+    name: "Lektion 8"
+    weight: 9
     
 ---
 
-# Lektion 9
+# Lektion 8
 ## Was ist ein Objekt? Und was ist eine Klasse?
 Ein Objekt ist eine Instanz einer Klasse. Eine Klasse ist eine Vorlage für ein Objekt. Eine Klasse definiert die Eigenschaften und Methoden, die ein Objekt haben kann. Eine Klasse definiert die Eigenschaften und Methoden, die ein Objekt haben kann. 
 ### Klasse deklarieren
@@ -63,6 +63,19 @@ class Klassenname implements Schnittstellenname {
 }
 ```
 ### Objekt deklarieren
+class Klassenname {
+    // Eigenschaften
+    // Methoden
+}
+Objekt deklarieren
+Klassenname Objektname = new Klassenname();
+Objekt verwenden
+Objektname.Eigenschaft;
+Objektname.Methode();
+Prototypbasierte Objektorientierung
+Prototypbasierte Objektorientierung ist ein Programmierparadigma, bei dem Objekte durch Prototypen definiert werden. Ein Prototyp ist ein Objekt, das als Vorlage für andere Objekte verwendet werden kann. Ein Prototyp ist ein Objekt, das als Vorlage für andere Objekte verwendet werden kann.
+
+
 ```
 Klassenname Objektname = new Klassenname();
 ```
