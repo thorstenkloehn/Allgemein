@@ -37,64 +37,6 @@ int main(int argc, char *argv[])
     return 0;
 }
 ```
-## Go
-### Python Skript in Go ausführen Ubuntu Installation
-```bash
-sudo apt install python3 python3-dev
-```
-
-## Go
-### Python Skript in Go ausführen
-```go
-package main
-// #cgo pkg-config: python3
-// #include <Python.h>
-import "C"
-func main() {
-    C.Py_Initialize()
-    C.PyRun_SimpleString(C.CString("print('Hello World!')"))
-    C.Py_Finalize()
-}
-```
-### oder
-```go
-package main
-
-// #cgo CFLAGS: -I/usr/include/python3.11
-// #cgo LDFLAGS: -lpython3.11
-// #include <Python.h>
-import "C"
-
-func main() {
-    C.Py_Initialize()
-
-	C.Py_Finalize()
-}
 
 
-## Python
-Python ist eine universelle, üblicherweise interpretierte höhere Programmiersprache. 
-### Einsatzgebiete
-- Webentwicklung
-- Datenanalyse
-- Machine Learning
-- Automatisierung
-- Cybersicherheit
-- Bildverarbeitung
-
-### Python Tutorials
-- [Python Tutorial](https://www.tutorialspoint.com/python/index.htm)
-- [Python Tutorial](https://www.learnpython.org/)
-- [Python Tutorial](https://www.w3schools.com/python/)
-- [Python Tutorial](https://www.python.org/about/gettingstarted/)
-- [Python Tutorial](https://www.python.org/doc/)
-
-### Python Wikibooks
-- [Python Wikibooks](https://en.wikibooks.org/wiki/Python_Programming)
-
-### Python Bücher
-- [Python Bücher](https://wiki.python.org/moin/PythonBooks)
-
-### Cheat Sheet
-- [Python Cheat Sheet](https://devhints.io/python)
 

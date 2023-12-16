@@ -156,6 +156,7 @@ code --install-extension MS-CEINTL.vscode-language-pack-de
 code --install-extension rust-lang.rust-analyzer
 code --install-extension eliostruyf.vscode-hugo-themer
 code --install-extension ckolkman.vscode-postgres
+code --install-extension formulahendry.code-runner
 ```
 ## Hugo
 - Installieren Sie Hugo mit folgendem Befehl.
