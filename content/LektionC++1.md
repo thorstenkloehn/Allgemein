@@ -103,6 +103,168 @@ const Datentyp Speicherort=Wert; // Konstante mit Wert initialisieren
 | ++ | Inkrement |
 | -- | Dekrement |
 
+## Vergleichsoperatoren
+| Operator | Bedeutung |
+| --- | ---
+| == | gleich |
+| != | ungleich |
+| < | kleiner |
+| > | größer |
+| <= | kleiner gleich |
+| >= | größer gleich |
+
+## Logische Operatoren
+| Operator | Bedeutung |
+| --- | ---
+| && | und |
+| \|\| | oder |
+| ! | nicht |
+
+## Wenn-Dann
+```c++
+if (Bedingung)
+{
+Anweisungen
+}
+```
+## Wenn-Dann-Sonst
+```c++
+if (Bedingung)
+{
+Anweisungen
+}
+else
+{
+Anweisungen 1
+}
+```
+## Wenn-Dann-Sonst-Wenn
+```c++
+if (Bedingung)
+{
+Anweisungen
+}
+else if (Bedingung 1)
+{
+Anweisungen 1
+}
+else
+{
+Anweisungen 2
+}
+```
+
+### Mehrfachauswahl
+```c++
+switch (Ausdruck)
+{
+case Wert 1:
+Anweisungen 1
+break;
+case Wert 2:
+Anweisungen 2
+break;
+default:
+Anweisungen 3
+}
+```
+## Schleifen
+### Zählschleife
+```c++
+for (Anfangswert; Bedingung; Schrittweite)
+{
+Anweisungen
+}
+```
+### kopfgesteuerte Schleife
+```c++
+while (Bedingung)
+{
+Anweisungen
+}
+```
+### fußgesteuerte Schleife
+```c++
+do
+{
+Anweisungen
+} while (Bedingung)
+```
+## Funktionen Deklarieren
+```c++
+Datentype Funktionname (Parameterliste)
+{
+Anweisungen
+return Rückgabewert;
+}
+```
+## Funktionen Aufrufen
+```c++
+Speicherort = Funktionname (Parameterliste);
+```
+## Konstanten in Funktionen
+```c++
+Datentyp Funktionname (const Datentyp Parameterliste)
+{
+Anweisungen
+return Rückgabewert;
+}
+```
+
+## Funktionen Template
+```c++
+template <typename T>
+T Funktionname (T Parameterliste)
+{
+Anweisungen
+return Rückgabewert;
+}
+```
+## Funktionen Template Aufrufen
+```c++
+Funktionname <Datentyp>(Parameterliste);
+```
+## Konstanter Ausdruck
+
+```c++
+constexpr Datentyp Speicherort=Wert; // Konstanter Ausdruck
+``` 
+## Statische Variablen
+```c++
+static Datentyp Speicherort=Wert; // Statische Variablen
+```
+C++ Casting
+```c++
+static_cast<Datentyp>(Wert); // C++ Casting
+```
+## Arrays Deklarieren
+```c++
+std::array<Datentyp,Anzahl>Speicherort;
+```
+## Arrays Initialisieren
+```c++
+std::array<Datentyp,Anzahl>Speicherort={Wert 1,Wert 2,Wert 3};
+```
+### Ausgabe eines Arrays
+```c++
+Datentyp Speicherort=Speicherort[Position]; // Ausgabe eines Arrays
+```
+### Array Länge
+```c++
+ Speicherort.size(); // Länge des Arrays
+```
+Array Gibt das Element an der angegebenen Position zurück.
+```c++
+Speicherort.at(Position); // Array Gibt das Element an der angegebenen Position zurück.
+```
+
+
+
+
+
+
+
+
 
 
 
