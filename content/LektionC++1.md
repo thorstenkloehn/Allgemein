@@ -257,6 +257,65 @@ Array Gibt das Element an der angegebenen Position zurück.
 ```c++
 Speicherort.at(Position); // Array Gibt das Element an der angegebenen Position zurück.
 ```
+## Heap Speicher
+```c++
+Datentyp *Speicherort=new Datentyp; // Heap Speicher
+```
+## Heap Speicher Löschen
+```c++
+delete Speicherort; // Heap Speicher Löschen
+```
+## Heap Speicher Array
+```c++
+Datentyp *Speicherort=new Datentyp[Anzahl]; // Heap Speicher Array
+```
+## Heap Speicher Array Löschen
+```c++
+delete[] Speicherort; // Heap Speicher Array Löschen
+```
+## Nullzeiger
+```c++
+Datentyp *Speicherort=nullptr; // Nullzeiger
+```
+## Referenzen
+```c++
+Datentyp &Speicherort=Wert; // Referenzen Zuweisung
+```
+## Referenzen Funktionen (Parameter)
+```c++
+void Funktionname (Datentyp &Parameterliste)
+{
+Anweisungen
+}
+```
+## Referenzen Funktionen (Rückgabewert)
+```c++
+Datentyp &Funktionname () 
+{
+Anweisungen
+return Rückgabewert;
+}
+```
+## Commmand Line Argumente
+```c++
+int main(int argc, char *argv[]) // Commmand Line Argumente
+{
+Anweisungen
+return 0;
+}
+```
+## Aufzählungstypen deklarieren
+```c++
+enum Speicherort {Wert 1,Wert 2,Wert 3}; // Aufzählungstypen deklarieren
+```
+## Aufzählungstypen initialisieren
+```c++
+Speicherort Speicherort=Wert 1; // Aufzählungstypen initialisieren mit Wert 1
+```
+
+
+
+
 
 
 

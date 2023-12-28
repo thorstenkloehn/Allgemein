@@ -139,7 +139,10 @@ export PATH=$PATH:$GOPATH/bin
 ```bash
 source ~/.bashrc
 ```
-
+## Java Installieren
+```bash
+sudo apt install openjdk-21-jdk
+```
 ## Visual Studio Code 
 ### Installieren
 ```bash
@@ -157,6 +160,7 @@ code --install-extension rust-lang.rust-analyzer
 code --install-extension eliostruyf.vscode-hugo-themer
 code --install-extension ckolkman.vscode-postgres
 code --install-extension formulahendry.code-runner
+code --install-extension vscjava.vscode-java-pack
 ```
 ## Hugo
 - Installieren Sie Hugo mit folgendem Befehl.
@@ -264,7 +268,7 @@ sudo ln -s /snap/bin/certbot /usr/bin/certbot
 sudo rm /etc/nginx/sites-enabled/default
 sudo systemctl stop nginx
 sudo certbot certonly --standalone -d ahrensburg.city -d www.ahrensburg.city
-sudo certbot certonly --standalone -d ahrensburg-dev.de -d www.ahrensburg-dev.de
+sudo certbot certonly --standalone -d dev.ahrensburg.city
 
 ```
 
@@ -301,9 +305,9 @@ server {
 server {
     listen 443 ssl http2;
     listen [::]:443 ssl http2;
-    server_name ahrensburg-dev.de;
-    ssl_certificate /etc/letsencrypt/live/ahrensburg-dev.de/fullchain.pem;
-    ssl_certificate_key /etc/letsencrypt/live/ahrensburg-dev.de/privkey.pem;
+    server_name dev.ahrensburg.city;
+    ssl_certificate /etc/letsencrypt/live/dev.ahrensburg.city/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/dev.ahrensburg.city/privkey.pem;
     root /home/thorsten/Allgemein/public;
 
     location / {
@@ -338,6 +342,7 @@ sudo ./install.sh
 ```bash
 1436550454 1933645497 1463041493 1190756458
 ```
+
 
 
 
